@@ -1,0 +1,38 @@
+.review-section { padding: 50px 10%; background: #FAF9F6; text-align: center; }
+.section-title { font-family: 'Outfit', sans-serif; color: #555848; margin-bottom: 30px; }
+
+.reviews-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+
+.review-card {
+  background: white;
+  border: 1px solid #E6DAC8;
+  padding: 25px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.stars { color: #A48D78; font-size: 1.2rem; margin-bottom: 10px; }
+.comment { font-style: italic; color: #555848; font-size: 0.95rem; }
+.client-name { color: #A48D78; margin-top: 15px; font-family: 'Outfit'; }
+
+.modal-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 9999;
+}
+
+.review-modal {
+  background: white; padding: 30px; border-radius: 25px; width: 400px; position: relative;
+  border: 4px solid #A48D78;
+}
+
+.review-modal input, .review-modal textarea, .review-modal select {
+  width: 100%; margin-top: 10px; padding: 10px; border-radius: 10px; border: 1px solid #E6DAC8;
+}
+
+.submit-review-btn {
+  background: #A48D78; color: white; border: none; padding: 12px;
+  width: 100%; border-radius: 10px; margin-top: 15px; cursor: pointer; font-weight: bold;
+}
+
+.close-btn { position: absolute; top: 10px; right: 15px; border: none; background: none; font-size: 1.5rem; }

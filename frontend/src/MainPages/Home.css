@@ -1,0 +1,238 @@
+.home-page {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: #FAF9F6; 
+}
+
+.container-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cleaning-hero-section {
+    height: 80vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    color: white; 
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.quote-button {
+    background-color: #A48D78; 
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.quote-button:hover {
+    background-color: #CBB9A4; 
+    transform: translateY(-2px);
+}
+
+.home-services-hero {
+    padding: 80px 0;
+    background-color: #F4F1EA;
+}
+
+.services-header-compact {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services-header-compact h2 {
+    font-size: 2.5rem;
+    color: #555848; 
+    margin-bottom: 10px;
+}
+
+.header-divider {
+    width: 60px;
+    height: 3px;
+    background: #A48D78; 
+    margin: 10px auto 20px;
+}
+
+.services-header-compact p {
+    color: #555848;
+    opacity: 0.8;
+}
+
+.compact-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.compact-service-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    border: 1px solid #E6DAC8; 
+}
+
+.compact-service-card:hover {
+    transform: translateY(-10px);
+}
+
+.compact-image-wrapper {
+    width: 100%;
+    height: 200px;
+}
+
+.compact-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.compact-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.compact-content h3 {
+    font-size: 1rem;
+    color: #555848; 
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.compact-book-btn {
+    background-color: #A48D78; 
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.compact-book-btn:hover {
+    background-color: #555848;
+}
+
+.explore-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.explore-button-home {
+    background-color: transparent;
+    color: #555848; 
+    border: 2px solid #A48D78; 
+    padding: 12px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.explore-button-home:hover {
+    background-color: #A48D78; 
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(164, 141, 120, 0.3);
+}
+
+.arrow-icon {
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+.explore-button-home:hover .arrow-icon {
+    transform: translateX(8px);
+}
+
+.how-it-works-section {
+    display: flex;
+    background: white;
+}
+
+.how-it-works-content {
+    flex: 1;
+    padding: 80px 10%;
+}
+
+.how-it-works-title {
+    font-size: 2.2rem;
+    color: #555848; 
+    margin-bottom: 40px;
+}
+
+.step-item {
+    margin-bottom: 30px;
+}
+
+.step-number {
+    font-size: 1.5rem;
+    color: #A48D78; 
+    font-weight: 800;
+}
+
+.step-heading {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #555848;
+}
+
+.step-description {
+    color: #555848;
+    opacity: 0.8;
+}
+
+.servicework-container {
+    flex: 1;
+}
+
+.servicework {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 992px) {
+    .how-it-works-section { flex-direction: column; }
+    .hero-title { font-size: 2.5rem; }
+    .servicework-container { height: 300px; }
+}
